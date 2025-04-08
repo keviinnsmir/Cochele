@@ -13,7 +13,7 @@ body {
 }
 
 .top-bar {
-  background: #00A443;
+  background:  #0e1d3f ;
   color: #fff;
   text-align: center;
   font-size: 14px;
@@ -27,7 +27,7 @@ body {
 }
 
 header {
-  background: #96bbcf;
+  background: #ffffff;
   box-shadow: 0 2px 5px rgba(0,0,0,0.1);
   position: relative;
 }
@@ -40,9 +40,12 @@ header {
   flex-wrap: wrap;
 }
 
-.logo-izq,
+.logo-izq {
+  width: 290px;
+  height: auto;
+}
 .logo-der {
-  width: 60px;
+  width: 90px;
   height: auto;
 }
 
@@ -69,7 +72,40 @@ header {
   color: #333;
   font-weight: bold;
   padding: 10px;
+  position: relative;
+  overflow: hidden;
+  display: inline-block;
+  text-align: center;
   transition: all 0.3s ease;
+}
+
+/* Líneas arriba y abajo de cada enlace */
+.menu a::before,
+.menu a::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  transition: all 0.3s ease;
+}
+
+.menu a::before {
+  top: 0;
+  background-color: #FFA500; /* Línea naranja en la parte superior */
+}
+
+.menu a::after {
+  bottom: 0;
+  background-color: #0077cc; /* Línea azul en la parte inferior */
+}
+
+.menu a:hover::before {
+  top: -2px; /* Desplazamiento hacia arriba al hacer hover */
+}
+
+.menu a:hover::after {
+  bottom: -2px; /* Desplazamiento hacia abajo al hacer hover */
 }
 
 .menu a:hover {
@@ -129,7 +165,7 @@ header {
 
 .hero {
   position: relative;
-  height: 400px;
+  height: 650px;
   overflow: hidden;
 }
 
@@ -143,21 +179,22 @@ header {
   z-index: -1;
 }
 
-.logo-encima {
+/* Imagen encima del video */
+.imagen-encima {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  font-size: 3em;
-  color: white;
-  font-weight: bold;
-  text-shadow: 2px 2px 8px rgba(0,0,0,0.8);
+  width: 250%; /* Ajusta el tamaño según sea necesario */
+  max-width: 500px; /* Limita el tamaño máximo */
+  z-index: 1;
 }
+
 
 .bienvenida {
   text-align: center;
-  padding: 40px 20px;
-  background: #fff;
+  padding: 60px 20px; /* Aumento de padding */
+  background:  #ffffff;
 }
 
 .bienvenida .animado {
@@ -175,11 +212,20 @@ header {
   }
 }
 
+/* Mejorar el estilo de la tipografía de bienvenida */
+.bienvenida h1 {
+  font-size: 3em; /* Aumento del tamaño de la fuente */
+  color: #333;
+  font-weight: 600; /* Hacerlo más destacado */
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
 .seccion-img-texto {
   display: flex;
   flex-direction: column;
   gap: 40px;
-  padding: 40px;
+  padding: 30px; /* Ajuste del padding para aprovechar el espacio */
   align-items: center;
   justify-content: center;
 }
@@ -194,8 +240,10 @@ header {
 }
 
 .bloque img {
-  width: 50%;
+  width: 100%; /* Imagen completamente responsiva */
+  max-width: 800px; /* Limitar el tamaño máximo */
   border-radius: 10px;
+  object-fit: cover; /* Asegura que la imagen ocupe todo el espacio sin perder proporciones */
 }
 
 .bloque.inverso {
@@ -220,7 +268,7 @@ header {
 }
 
 .cinta img {
-  height: 60px;
+  height: 150px;
   object-fit: contain;
 }
 
@@ -230,7 +278,7 @@ header {
 }
 
 footer {
-  background: #222;
+  background: #132b62;
   color: #fff;
   text-align: center;
   padding: 40px 20px;
@@ -241,7 +289,7 @@ footer {
 }
 
 footer .footer-logo {
-  max-width: 100px;
+  max-width: 250px;
 }
 
 footer .footer-links {
@@ -252,7 +300,7 @@ footer .footer-links {
 }
 
 footer .footer-links a {
-  color: #0ff;
+  color: #ffffff;
   text-decoration: none;
   font-weight: 500;
 }
@@ -263,7 +311,7 @@ footer .footer-links a:hover {
 
 footer p {
   font-size: 14px;
-  color: #aaa;
+  color: #ffffff;
 }
 
 @media (max-width: 768px) {

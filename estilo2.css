@@ -5,7 +5,7 @@ body {
     color: #333;
   }
   .top-bar {
-    background: #00A443;
+    background: #0e1d3f ;
     color: #fff;
     text-align: center;
     font-size: 14px;
@@ -19,7 +19,7 @@ body {
   }
   
   header {
-    background: #96bbcf;
+    background: #ffffff;
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
     position: relative;
   }
@@ -34,14 +34,8 @@ body {
   
   .logo-izq,
   .logo-der {
-    width: 60px;
+    width: 190px;
     height: auto;
-  }
-  
-  .nav {
-    flex: 1;
-    text-align: center;
-    position: relative;
   }
   
   .menu {
@@ -61,7 +55,40 @@ body {
     color: #333;
     font-weight: bold;
     padding: 10px;
+    position: relative;
+    overflow: hidden;
+    display: inline-block;
+    text-align: center;
     transition: all 0.3s ease;
+  }
+  
+  /* Líneas arriba y abajo de cada enlace */
+  .menu a::before,
+  .menu a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    transition: all 0.3s ease;
+  }
+  
+  .menu a::before {
+    top: 0;
+    background-color: #FFA500; /* Línea naranja en la parte superior */
+  }
+  
+  .menu a::after {
+    bottom: 0;
+    background-color: #0077cc; /* Línea azul en la parte inferior */
+  }
+  
+  .menu a:hover::before {
+    top: -2px; /* Desplazamiento hacia arriba al hacer hover */
+  }
+  
+  .menu a:hover::after {
+    bottom: -2px; /* Desplazamiento hacia abajo al hacer hover */
   }
   
   .menu a:hover {
@@ -178,7 +205,7 @@ body {
   /* Hero */
   .hero {
     position: relative;
-    height: 50vh;
+    height: 60vh;
     overflow: hidden;
   }
   #videoFondo {
@@ -194,7 +221,7 @@ body {
     color: white;
     font-size: 2.5rem;
     font-weight: bold;
-    background: rgba(0, 0, 0, 0.4);
+    background: #db840d ;
     padding: 20px;
     border-radius: 10px;
   }
@@ -210,7 +237,7 @@ body {
   }
   .privacidad h3 {
     margin-top: 30px;
-    color: #00ccff;
+    color: #0e1d3f ;
   }
   .privacidad ul {
     padding-left: 20px;
@@ -220,7 +247,7 @@ body {
     background: #f9f9f9;
     padding: 30px;
     border-radius: 10px;
-    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    box-shadow: 0 2px 10px #0000001a;
   }
   .formulario-privacidad label {
     display: block;
@@ -238,7 +265,7 @@ body {
   }
   .formulario-privacidad button {
     margin-top: 20px;
-    background: #00ccff;
+    background: #00A443;
     color: white;
     padding: 10px 20px;
     border: none;
@@ -253,8 +280,8 @@ body {
   
   /* Footer */
   footer {
-    background: #111;
-    color: white;
+    background:  #132b62 ;
+    color: #ffffff;
     padding: 30px 10%;
     text-align: center;
   }
@@ -269,7 +296,7 @@ body {
     margin-bottom: 10px;
   }
   .footer-links a {
-    color: #00ccff;
+    color: #ffffff;
     text-decoration: none;
   }
   .footer-links a:hover {
