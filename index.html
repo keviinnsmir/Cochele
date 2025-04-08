@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Grupo Cochele</title>
+  <link rel="stylesheet" href="estilo.css">
+  <script defer src="script.js"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- Barra superior -->
+  <div class="top-bar">
+    Lunes a Viernes de 9:00 a 18:00 | <a href="#">Facebook</a> <a href="#">Instagram</a> <a href="#">Twitter</a> | 📞 912 345 678
+  </div>
+
+  <!-- Header -->
+  <header>
+    <div class="header-container">
+      <img src="logo-cochele.png" alt="Logo Grupo Cochele" class="logo-izq">
+
+      <nav class="nav">
+        <div class="menu-toggle" id="menu-toggle">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <ul class="menu" id="menu">
+          <li class="submenu">
+            <a href="#">Inicio</a>
+            <ul class="dropdown">
+              <li><a href="#">Quiénes Somos</a></li>
+              <li><a href="#">Misión</a></li>
+              <li><a href="#">Visión</a></li>
+            </ul>
+          </li>
+          <li class="submenu">
+            <a href="#">Servicios</a>
+            <ul class="dropdown">
+              <li><a href="#">Venta</a></li>
+              <li><a href="#">Alquiler</a></li>
+              <li><a href="#">Reparación</a></li>
+            </ul>
+          </li>
+          <li class="submenu">
+            <a href="#">Contacto</a>
+            <ul class="dropdown">
+              <li><a href="#">Ubicación</a></li>
+              <li><a href="#">Formulario</a></li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+
+      <img src="logo-iberdrola.png" alt="Logo Iberdrola" class="logo-der">
+    </div>
+  </header>
+
+  <!-- Portada con video -->
+  <section class="hero">
+    <video autoplay muted loop id="videoFondo">
+      <source src="video-portada.mp4" type="video/mp4">
+      Tu navegador no soporta video HTML5.
+    </video>
+    <div class="logo-encima">Grupo Cochele</div>
+  </section>
+
+  <!-- Bienvenida -->
+  <section class="bienvenida">
+    <h2 class="animado">¡Bienvenidos a Grupo Cochele!</h2>
+    <br>
+    <p class="animado">En Grupo Cochele, nos especializamos en soluciones energéticas sostenibles que impulsan la transición hacia un futuro más verde. Nuestra misión es ofrecer servicios innovadores que permitan a nuestros clientes reducir su huella de carbono, optimizar el consumo de energía y contribuir al cuidado del medio ambiente. Desde la instalación de comunidades solares hasta la implementación de puntos de recarga para vehículos eléctricos, nos comprometemos con el bienestar global y la eficiencia energética.</p>
+  </section>
+
+  <!-- Secciones con imagen y texto -->
+  <section class="seccion-img-texto">
+    <div class="bloque">
+      <img src="vehiculo1.jpg" alt="Vehículo eléctrico">
+      <p>Conoce nuestra gama de vehículos eléctricos adaptados a todas tus necesidades.</p>
+    </div>
+    <div class="bloque inverso">
+      <img src="servicio.jpg" alt="Servicios de mantenimiento">
+      <p>Servicios de mantenimiento eficientes, rápidos y responsables con el medio ambiente.</p>
+    </div>
+  </section>
+
+  <!-- Colaboradores -->
+  <section class="colaboradores">
+    <div class="cinta">
+      <img src="colaborador1.png" alt="Colaborador 1">
+      <img src="colaborador2.png" alt="Colaborador 2">
+      <img src="colaborador3.png" alt="Colaborador 3">
+      <img src="colaborador4.png" alt="Colaborador 4">
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <img src="logo-cochele.png" alt="Grupo Cochele Logo" class="footer-logo">
+    <div class="footer-links">
+      <a href="#">Aviso Legal</a>
+      <a href="politica.html">Política de Privacidad</a>
+      <a href="#">Cookies</a>
+      <a href="#">Contacto</a>
+    </div>
+    <p>© 2025 Grupo Cochele. Todos los derechos reservados.</p>
+  </footer>
+</body>
+</html>
